@@ -1,12 +1,28 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./styles/index.css";
+import "./styles/styles.scss";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import HomePage from "./pages/home";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <div>Main entry</div>
-  </React.StrictMode>
-);
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  // {
+  //   path: "/contact",
+  //   element: <ContactPage />,
+  // },
+  {
+    path: "*",
+    element: <Navigate to="/" replace />,
+  },
+]);
+
+root.render(<RouterProvider router={router} />);

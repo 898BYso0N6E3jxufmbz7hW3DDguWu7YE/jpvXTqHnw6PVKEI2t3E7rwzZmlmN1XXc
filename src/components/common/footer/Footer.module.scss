@@ -1,0 +1,19 @@
+@use '../../../styles/base/settings' as *;
+
+//mobile
+.footerContainer{
+  width: 100%;
+  background: #000000;
+}
+.footerContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+}
+.copyrightText{
+  font-style: 'Kohinoor-Bangla';
+  font-size: 14px;
+  color: #ffffff;
+}
+@media (max-width: $breakpoint-phone ){}

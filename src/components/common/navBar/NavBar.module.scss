@@ -1,0 +1,113 @@
+@use '../../../styles/base/settings' as *;
+
+//mobile
+.container {
+  width: 100%;
+  background: $primaryBackground;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  width: 65px;
+  margin: 0px;
+  cursor: pointer;
+}
+.menuIcon{
+  height: 100%;
+  margin: 0px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+ }
+.contentContainer {
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  height: calc(100vh);
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  padding: 0px 33px;
+  padding-top: 108px;
+  background-color: #1B1B76;
+}
+.contentContainerActive{
+  display: block;
+}
+.contentContainerInactive{
+  display: none;
+}
+.closeIcon{
+  margin: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 32px;
+  cursor: pointer;
+ }
+.navElementsContainer{
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 22px;
+}
+.navElement{
+  margin: 0px;
+  color: #FFFFFF;
+  font-family: 'Akhand-Black';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+//tablet==>>390px
+@media (min-width: 391px){
+  .container{
+    padding: 12px 30px;
+  }
+  .menuIcon{
+    display: none;
+  }
+  .closeIcon{
+    display: none;
+  }
+  .contentContainer{
+    position: static;
+    height: 100%;
+    transition: none;
+    padding: 0px;
+    background-color: $primaryBackground;
+  }
+  .contentContainerInactive{
+    display: block;
+  }
+  .navElementsContainer{
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0px;
+    gap: 32px;
+  }
+  .navElement{
+    font-size: 16px;
+  }
+}
+
+//laptop--> >768px
+@media (min-width: 769px){
+  .logo {
+    width: 85px;
+  }
+  .navElement{
+    font-size: 24px;
+  }
+}

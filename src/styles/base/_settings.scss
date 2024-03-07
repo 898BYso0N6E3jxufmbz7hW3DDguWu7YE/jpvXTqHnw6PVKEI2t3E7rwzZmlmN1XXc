@@ -1,0 +1,69 @@
+// import the required theme file with the correct color variables that are used in the baseTheme file
+@forward '../themes/_baseTheme.scss';
+// Colors
+$white: #ffffff;
+
+// Break points
+$breakpoint-phone: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1440px;
+$breakpoint-LargeDesktop: 1920px;
+
+// Mixins
+@mixin respond($breakpoint) {
+  @if ($breakpoint == 'extraLarge') {
+    @media (min-width: $breakpoint-desktop) and (max-width: $breakpoint-LargeDesktop) {
+      @content;
+    }
+  }
+  @if ($breakpoint == 'large') {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+  @if ($breakpoint == 'medium') {
+    @media (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+  @if ($breakpoint == 'small') {
+    @media (max-width: $breakpoint-phone) {
+      @content;
+    }
+  }
+}
+
+$contentWidth: 1440px;
+
+@mixin centerDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flexRow{
+  @include centerDiv;
+  align-items: center;
+}
+
+@mixin flexColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRowStart{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flexColumnStart{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
