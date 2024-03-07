@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
-import styles from "./CustomPage.module.scss";
-import Footer from "../footer/Footer";
-import NavBar from "../navBar/NavBar";
+import React, { ReactNode } from 'react';
+import styles from './CustomPage.module.scss';
+import Footer from '../footer/Footer';
+import NavBar from '../navBar/NavBar';
 
 type CustomPageProps = {
   children: ReactNode;
