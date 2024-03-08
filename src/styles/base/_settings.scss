@@ -36,32 +36,32 @@ $breakpoint-LargeDesktop: 1920px;
 
 $contentWidth: 1440px;
 
-@mixin centerDiv{
+@mixin centerDiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-@mixin flexRow{
+@mixin flexRow {
   @include centerDiv;
   align-items: center;
 }
 
-@mixin flexColumn{
+@mixin flexColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flexRowStart{
+@mixin flexRowStart {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-@mixin flexColumnStart{
+@mixin flexColumnStart {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

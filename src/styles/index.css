@@ -3,78 +3,89 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Akhand-Bold";
-  src: local("Akhand-Bold"),
-    url("../../public/assets/fonts/Akhand-Bold.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Akhand-Bold';
+  src:
+    local('Akhand-Bold'),
+    url('../../public/assets/fonts/Akhand-Bold.ttf') format('truetype');
+  font-display: block;
 }
 @font-face {
-  font-family: "Akhand-Black";
-  src: local("Akhand-Black"),
-    url("../../public/assets/fonts/Akhand-Black.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Akhand-Black';
+  src:
+    local('Akhand-Black'),
+    url('../../public/assets/fonts/Akhand-Black.ttf') format('truetype');
+  font-display: block;
 }
 @font-face {
-  font-family: "Kohinoor-Bangla";
-  src: local("Kohinoor-Bangla"),
-    url("../../public/assets/fonts/KohinoorBangla-Regular.ttf") format("truetype");
-  font-display:block;
-}
-
-
-@font-face {
-  font-family: "Akhand-Semibold";
-  src: local("Akhand-Semibold"),
-    url("../../public/assets/fonts/Akhand-Semibold.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Kohinoor-Bangla';
+  src:
+    local('Kohinoor-Bangla'),
+    url('../../public/assets/fonts/KohinoorBangla-Regular.ttf') format('truetype');
+  font-display: block;
 }
 
 @font-face {
-  font-family: "Inter-Light";
-  src: local("Inter-Light"),
-    url("../../public/assets/fonts/Inter-Light.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Akhand-Semibold';
+  src:
+    local('Akhand-Semibold'),
+    url('../../public/assets/fonts/Akhand-Semibold.ttf') format('truetype');
+  font-display: block;
 }
 
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: local("Montserrat-Regular"),
-    url("../../public/assets/fonts/Montserrat-Regular.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Inter-Light';
+  src:
+    local('Inter-Light'),
+    url('../../public/assets/fonts/Inter-Light.ttf') format('truetype');
+  font-display: block;
 }
 
 @font-face {
-  font-family: "Ubuntu-Bold";
-  src: local("Ubuntu-Bold"),
-    url("../../public/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Montserrat-Regular';
+  src:
+    local('Montserrat-Regular'),
+    url('../../public/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-display: block;
 }
 
 @font-face {
-  font-family: "Ubuntu-Light";
-  src: local("Ubuntu-Light"),
-    url("../../public/assets/fonts/Ubuntu-Light.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Ubuntu-Bold';
+  src:
+    local('Ubuntu-Bold'),
+    url('../../public/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-display: block;
 }
 
 @font-face {
-  font-family: "Ubuntu-Medium";
-  src: local("Ubuntu-Medium"),
-    url("../../public/assets/fonts/Ubuntu-Medium.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Ubuntu-Light';
+  src:
+    local('Ubuntu-Light'),
+    url('../../public/assets/fonts/Ubuntu-Light.ttf') format('truetype');
+  font-display: block;
 }
 
 @font-face {
-  font-family: "Ubuntu-Regular";
-  src: local("Ubuntu-Regular"),
-    url("../../public/assets/fonts/Ubuntu-Regular.ttf") format("truetype");
-  font-display:block;
+  font-family: 'Ubuntu-Medium';
+  src:
+    local('Ubuntu-Medium'),
+    url('../../public/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src:
+    local('Ubuntu-Regular'),
+    url('../../public/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-display: block;
 }
 
 body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  font-family: "Ubuntu-Light"; 
+  font-family: 'Ubuntu-Light';
 }
 
-::webkit-scrollbar { display: none }
+::webkit-scrollbar {
+  display: none;
+}

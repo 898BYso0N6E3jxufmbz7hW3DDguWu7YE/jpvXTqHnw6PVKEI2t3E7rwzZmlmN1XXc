@@ -1,12 +1,12 @@
 @use './base/settings';
 
-.body{
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #000030;
+.body {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #000030;
 }
-.body::-webkit-scrollbar{
-    display: none;
+.body::-webkit-scrollbar {
+  display: none;
 }

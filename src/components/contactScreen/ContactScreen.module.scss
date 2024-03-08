@@ -16,6 +16,7 @@
   margin-top: 95px;
   width: 100%;
   max-width: 400px;
+  padding: 15px 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,47 +26,21 @@
   border: 2px solid #ecf0f1;
   background-color: #ffffff;
 }
-.appLogo {
-  width: 65px;
-}
-.title {
+.text1 {
   color: #17202a;
   font-family: 'Akhand-Black';
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
 }
-.description {
+.text2 {
   color: #2c3e50;
   font-family: 'Ubuntu-Bold';
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
-}
-.actionsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.playStoreImg {
-  width: 125px;
-}
-.text {
-  color: #ffffff;
-  font-family: 'Ubuntu-Bold';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 10px 30px;
-  text-align: center;
-  border-radius: 16px;
-  border: 1px solid #17202a;
-  background: linear-gradient(172deg, rgba(246, 244, 249, 1) 0%, rgba(1, 15, 18, 1) 0%, rgba(19, 9, 121, 1) 100%);
 }
